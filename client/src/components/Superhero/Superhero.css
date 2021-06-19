@@ -1,0 +1,65 @@
+.superhero {
+  margin-bottom: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.superhero__img {
+  width: 100%;
+  max-width: 350px;
+  height: 450px;
+}
+
+.superhero__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.superhero__nickname {
+  display: flex;
+  position: relative;
+  margin-bottom: 15px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.superhero__nickname:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 1px;
+  background-color: black;
+}
+
+.superhero__actions {
+  display: flex;
+  padding: 10px 5px 20px;
+  justify-content: space-around;
+}
+
+.superhero__actions-btn {
+  display: inline-flex;
+  padding: 7px 12px;
+  font-size: 18px;
+  font-family: inherit;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 6px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.superhero__actions-btn:hover {
+  color: black;
+  background-color: white;
+}

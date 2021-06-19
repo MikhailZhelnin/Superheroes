@@ -1,0 +1,37 @@
+.navbar {
+  margin-bottom: 25px;
+  padding: 10px 0;
+  background-color: black;
+}
+
+.navbar__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__title {
+  font-size: 30px;
+  color: white;
+}
+
+.navbar__nav {
+  display: flex;
+}
+
+.navbar__item {
+  margin-right: 25px;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  transition: background-color 0.2s linear;
+}
+
+.navbar__item:hover {
+  background-color: rgb(58, 58, 58);
+}
+
+.navbar__item:last-child {
+  margin-right: 0;
+}

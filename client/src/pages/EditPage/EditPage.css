@@ -1,0 +1,117 @@
+.edit {
+}
+
+.edit__wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.edit__title {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.edit__form {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit__form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit__form-control label {
+  margin-bottom: 2px;
+  font-size: 22px;
+}
+
+.edit__form-control input,
+textarea {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.edit__form-control textarea {
+  height: 100px;
+  resize: none;
+}
+
+#input[type='file'] {
+  display: none;
+}
+
+.edit__form-control__labelImg {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.edit__form-control__labelImg svg {
+  margin-left: 5px;
+}
+
+.edit__form-previewImages {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.edit__form-previewImages__img {
+  width: 22%;
+  height: 100px;
+  margin: 30px 0 2px;
+  position: relative;
+}
+
+.edit__form-previewImages__img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.edit__form-previewImages__img-btn {
+  position: absolute;
+  top: -26px;
+  right: -12px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.edit__form-btn,
+.edit__btn-delete {
+  align-self: center;
+  display: inline-flex;
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-family: inherit;
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.edit__form-btn:hover,
+.edit__btn-delete:hover {
+  color: black;
+  background-color: white;
+}
